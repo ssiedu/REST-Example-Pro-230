@@ -10,6 +10,7 @@ public class Course {
 	private String title;
 	private String subject;
 	private int fees;
+	private Exam einfo;
 	public String getCode() {
 		return code;
 	}
@@ -36,7 +37,14 @@ public class Course {
 	}
 	@Override
 	public String toString() {
-		return "Course [code=" + code + ", title=" + title + ", subject=" + subject + ", fees=" + fees + "]";
+		return "Course [code=" + code + ", title=" + title + ", subject=" + subject + ", fees=" + fees + ", einfo="
+				+ einfo + "]";
+	}
+	public Exam getEinfo() {
+		return einfo;
+	}
+	public void setEinfo(Exam einfo) {
+		this.einfo = einfo;
 	}
 	
 }
